@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>CRUD WEB APP Grupo 01</title>
+	<meta charset="utf-8"  />
+<LINK rel=StyleSheet href="estilo.css" type="text/css" >
+<script src="codigo.js"></script>
+<style>
+body{
+	margin:0;
+	padding:0;
+	background:#525252;
+	font:70% Arial, Helvetica, sans-serif; 
+	color:rgb(255, 255, 255);
+	line-height:150%;
+	text-align:left;
+}
+a{
+	text-decoration:none;
+	color:#057fac;
+}
+a:hover{
+	text-decoration:none;
+	color:#999;
+}
+h1{
+	font-size:140%;
+	margin:0 20px;
+	line-height:80px;	
+}
+h2{
+	font-size:120%;
+}
+#container{
+	margin:0 auto;
+	width:680px;
+	background:#fff;
+	padding-bottom:20px;
+}
+#content{margin:0 20px;}
+p.sig{	
+	margin:0 auto;
+	width:680px;
+	padding:1em 0;
+}
+form{
+	margin:1em 0;
+	padding:.2em 20px;
+	background:rgb(108, 112, 74);
+}
+
+div form.create-Act{
+	display: block;
+  margin: 0.5px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  font-size: 0;
+  text-align: center;
+}
+div form.create-Act label{
+	display: relative;
+	padding: 16px 20px 13px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #939393;
+  cursor: pointer;
+}
+div form.create-Act input{
+	display: inline-block;
+  position: relative;
+  width: auto;
+  height: 27px;
+  line-height: 27px;
+  margin: 5px -5px 0;
+  padding: 7px 5px 3px;
+  border-color: rgb(77, 75, 75);
+  outline: none;
+  color: #555;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: .6;
+  transition: all linear .3s;
+}
+div form.create-Act select{
+	display: inline-block;
+  position: relative;
+  width: auto;
+  height: 27px;
+  line-height: 27px;
+  margin: 5px -5px 0;
+  padding: 7px 5px 3px;
+  border-color: rgb(77, 75, 75);
+  outline: none;
+  color: #555;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  opacity: .6;
+  transition: all linear .3s;
+}
+button.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button.button:hover {
+    background-color: #af784c; /* Green */
+    color: white;
+}
+
+</style>
+</head>
+
+<body style="background-color: rgb(70, 66, 59);">
+ <h1 style="text-align: center;">Desarrollo de CRUD en web app para el tema de aeronaves</h1>
+     <p style="text-align: center;">Grupo: 01<br>
+		Tema: Aeronaves
+		</p>
+		<div style="text-align: center;">
+	 <button class="button" id="naves" onclick="obtenerAeronaves();this.style.display='none';"style="cursor:pointer; background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">Ver Aeronaves</button>
+	</div>
+	 <div id="listado" style="display:none;">
+		<form class="create-Act" name="datosIn" id="formulario">
+			<!--<label style="color: black;">Registrar nuevo producto</label><br>
+
+			<label >ID:</label>
+			<input type="text" id="c5"  class="idC" placeholder="ID">
+	   
+	   <label >Imagen:</label>
+	   <input type="text" id="imgC" class="imgC" placeholder="url imagen de producto" >
+	 
+	 <label >Precio:</label>
+	 <input type="text" id="precioC"  class="precioC" placeholder="Precio"><br>
+   
+   <label >Titulo:</label>
+   <input type="text" id="tituloC"  class="tituloC" placeholder="Titulo"> 
+   
+   <label >Descripcion:</label>
+   <input type="text" id="descC" class="descC" placeholder="Descripcion">
+  
+   <label >Categoria:</label>
+   <select class="seleccion" name="catC" >
+	<option value="damas">damas
+	<option value="caballeros">caballeros
+	<option value="electronicos">electronicos
+	<option value="joyeria">joyeria
+	</select>
+   
+   <br>
+   <br>-->
+   <button class="button" href="#" style="cursor:pointer; background-color: #5c77ec;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">Registrar Aeronave</button>
+   <br>
+   <br>
+   <button class="button" href="#" style="cursor:pointer; background-color: #5c77ec;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;">Modificar dato Aeronave</button>
+   
+</form>
+
+	 <form name="filtroprods" id="filtroprods" style="text-align: center;">
+	   Seleccione Categorias<br> 
+	   
+	   <input type="checkbox" id="c1" value="c1" checked>Comercial
+	 <input type="checkbox" id="c2" value="c2" checked>Militar
+   <input type="checkbox" id="c3" value="c3" checked>Carga
+   <input type="checkbox" id="c4" value="c4" checked>Experimental
+   <p  style="text-align: center; color: rgb(3, 3, 3);"><b>Click en la imagen para Acercamiento</b></p>
+   <p  style="text-align: center; color: rgb(3, 3, 3);"><b>Click en Fecha de lanzamiento para ordenar Asc o Desc</b></p>
+     <table id="tabla" border="1" cellspacing="0" cellpadding="0" style="width:80%;margin:auto; border-collapse:collapse;background-color: rgb(43, 88, 60);">
+	 <thead>
+	 <tr><th>id</th><th>foto</th><th  id="since">Fecha de primer vuelo</th>
+	 <th>Nombre</th><th>Descripcion</th><th>Categoria</th><th>Eliminar</th></tr>
+	 </thead>
+	 <tbody id="tbody"></tbody>
+	 </table>
+	 </form>
+	 </div> 
+</body>
+</html>
