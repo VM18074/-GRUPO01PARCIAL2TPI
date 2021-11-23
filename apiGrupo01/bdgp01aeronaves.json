@@ -1,0 +1,164 @@
+{
+"aeronaves":[
+  {
+    "id": 1,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "comercial",
+    "description": ""
+  },
+  {
+    "id": 2,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "comercial",
+    "description": ""
+  },
+  {
+    "id": 3,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "comercial",
+    "description": ""
+  },
+  {
+    "id": 4,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "comercial",
+    "description": ""
+  },
+  {
+    "id": 5,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "comercial",
+    "description": ""
+  },
+  {
+    "id": 6,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "militar",
+    "description": ""
+  },
+  {
+    "id": 7,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "militar",
+    "description": ""
+  },
+  {
+    "id": 8,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "militar",
+    "description": ""
+  },
+  {
+    "id": 9,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "militar",
+    "description": ""
+  },
+  {
+    "id": 10,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "militar",
+    "description": ""
+  },
+  {
+    "id": 11,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "carga",
+    "description": ""
+  },
+  {
+    "id": 12,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "carga",
+    "description": ""
+  },
+  {
+    "id": 13,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "carga",
+    "description": ""
+  },
+  {
+    "id": 14,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "carga",
+    "description": ""
+  },
+  {
+    "id": 15,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "carga",
+    "description": ""
+  },
+  {
+    "id": 16,
+    "image": "",
+    "price": "29.95",
+    "title": "",
+    "category": "experimental",
+    "description": ""
+  },
+  {
+    "id": 17,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "experimental",
+    "description": ""
+  },
+  {
+    "id": 18,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "experimental",
+    "description": ""
+  },
+  {
+    "id": 19,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "experimental",
+    "description": ""
+  },
+  {
+    "id": 20,
+    "image": "",
+    "price": "",
+    "title": "",
+    "category": "experimental",
+    "description": ""
+  }
+]
+}
