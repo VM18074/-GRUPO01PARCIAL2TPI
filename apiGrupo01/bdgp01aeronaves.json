@@ -82,83 +82,83 @@
   },
   {
     "id": 11,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://th.bing.com/th/id/OIP.OM-PlMQLi9GmoCkun84bXAHaEK?pid=ImgDet&rs=1",
+    "since": "1988",
+    "title": "AN 225",
     "category": "carga",
-    "description": ""
+    "description": "Este avión existe en una sola copia y fue creado específicamente como parte del sistema de transporte de aviación para el proyecto de nave espacial reutilizable Buran, An-225 tiene una capacidad de elevación de 250 toneladas con la posibilidad de colocación de carga tanto interna como externa."
   },
   {
     "id": 12,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://th.bing.com/th/id/OIP.HbaVspcmLJugoq7cmvkPawHaEj?pid=ImgDet&rs=1",
+    "since": "1971",
+    "title": "IL 76",
     "category": "carga",
-    "description": ""
+    "description": "Transporte confiable con una gran capacidad de carga, utilizado para el transporte internacional de mercancías grandes y voluminosas.Hasta 48 toneladas, hasta 175 m³"
   },
   {
     "id": 13,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://th.bing.com/th/id/OIP.4_XWFPm_wavMdqQ-AEWEOAHaEs?pid=ImgDet&rs=1",
+    "since": "1994",
+    "title": "AN 124",
     "category": "carga",
-    "description": ""
+    "description": "El pesado avión de transporte de largo alcance desarrollado por Antonov Design Bureau, creado originalmente para el transporte de lanzadores móviles de misiles balísticos intercontinentales, ahora opera como un avión para el transporte de carga voluminosa y no estándar."
   },
   {
     "id": 14,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://th.bing.com/th/id/R.ea81a53df01c10ea9d591685c0bf037c?rik=bvNy2Adoh8LCmg&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f1%2f10%2fCargolux_B747-400F.jpg&ehk=YJl7KOjQjI7sPzyBpvrJEA54TX1oDZ4vH%2bcaEPTNXbM%3d&risl=&pid=ImgRaw&r=0",
+    "since": "1969",
+    "title": "Boeing 747 F Freighter",
     "category": "carga",
-    "description": ""
+    "description": "La aeronave está equipada con una puerta lateral o en su nariz, dependiendo del modelo, pudiendo cargar un total de 38 pallets más la carga suelta, quedando éstos distribuidos entre la cubierta principal, que tiene una capacidad de 29 pallets, y 9 en la cubierta inferior donde también se reparte la carga suelta a granel. La capacidad total es de 107 toneladas."
   },
   {
     "id": 15,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://th.bing.com/th/id/OIP.dL9LChBKSnQULpQZ7f6P0gHaFB?pid=ImgDet&rs=1",
+    "since": "1994",
+    "title": "Airbus 300-600 ST",
     "category": "carga",
-    "description": ""
+    "description": "El Airbus 300-600 ST, más conocido como Beluga está diseñado para el transporte de carga de grandes dimensiones como helicópteros u otros aviones más pequeños. Posee un rango de vuelo de 1.667 kilómetros y 47 toneladas. El área de carga del avión se localiza debajo de la cabina, permitiendo así llenar casi todo el largo del avión con mercancía. La puerta delantera se abre completamente permitiendo introducir la carga de forma cómoda."
   },
   {
     "id": 16,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://th.bing.com/th/id/R.26948f127a3c9dad7f45300b67ea3641?rik=cFEdMahYcEmZAA&riu=http%3a%2f%2fwww.hispaviacion.es%2fwp-content%2fuploads%2f2020%2f06%2fC605_BEA-1024x683.png&ehk=r101Yy1MeTizldGfCKG71nGoWYu7G3pQNZh40DdYsOk%3d&risl=&pid=ImgRaw&r=0",
+    "since": "Indefinido",
+    "title": "X-59 El avión sin parabrisas",
     "category": "experimental",
-    "description": ""
+    "description": "El ensamblaje del avión supersónico de la NASA X-59 está casi terminado. Tiene características peculiares como cámaras, sensores y una pantalla 4k para la navegación. "
   },
   {
     "id": 17,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://fly-news.es/wp-content/uploads/SolarStratos1-990x557.jpeg",
+    "since": "previsto para 2022",
+    "title": "SolarStratos",
     "category": "experimental",
-    "description": ""
+    "description": "avión ‘0 emisiones’ impulsado 100% por energía solar"
   },
   {
     "id": 18,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://fly-news.es/wp-content/uploads/MAVERIC-modelo-vuelo-990x688.jpg",
+    "since": "2019",
+    "title": "MAVERIC",
     "category": "experimental",
-    "description": ""
+    "description": "MAVERIC, siglas en inglés de “avión a escala para validación y experimentación de controles innovadores robustos“ es un avión a radio control de 2 metros de largo,  3,2 de envergadura, y 2,25 metros cuadrados de superficie, que responde al tipo de aeronave de ala volante con fuselaje"
   },
   {
     "id": 19,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://fly-news.es/wp-content/uploads/Captura-de-pantalla-2019-04-11-a-las-11.52.39.png",
+    "since": "indefinido",
+    "title": "Zuri",
     "category": "experimental",
-    "description": ""
+    "description":"Avión no tripulado con una capacidad de transporte de cuatro personas. El diseño combina las ventajas de los helicópteros y aviones, con rotores impulsados eléctricamente que permiten el despegue y el aterrizaje vertical,"
   },
   {
     "id": 20,
-    "image": "",
-    "since": "",
-    "title": "",
+    "image": "https://th.bing.com/th/id/R.73922640347e8dab44651198a84ea555?rik=3KOuTVOj1%2bBbPg&riu=http%3a%2f%2fbinarysauce.files.wordpress.com%2f2012%2f08%2f480844main_x-48c_lakebed_672.jpg&ehk=ElSB92BaJTxHp4soM2fwBrU4KgpnLwi2%2bDE5m%2fnsGo8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+    "since": "2007",
+    "title": "X-48C",
     "category": "experimental",
-    "description": ""
+    "description": "El X-48 es un demostrador tecnológico tipo UAV de un diseño de avión de pasajeros subsónico tipo ala volante. Dispone de dos reactores de 40,4 kg de empuje cada uno y los winglets han sido colocados en la parte trasera junto a los motores"
   }
 ]
 }
