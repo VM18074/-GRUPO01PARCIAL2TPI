@@ -1,0 +1,48 @@
+@charset "UTF8"
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("images/aeronave.jpg");
+    text-align: center;
+}
+
+body h1{
+    border-radius: 100px;
+    border: black 1px solid;
+    background-color: cyan;
+    text-align: center;
+}
+
+
+
+table {
+    width: 50%;
+    background-color: inherit;
+    font-family: fantasy;
+    text-align: left;
+    display: inline;
+    color: white;
+    font-size: 20px;
+}
+
+table input,textarea, select{
+    background-color: inherit;
+    font-family: fantasy;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+select{
+    color: black;
+}
+
+
+#enviar{
+    background-color: cyan;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+}

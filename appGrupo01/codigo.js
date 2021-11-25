@@ -32,6 +32,32 @@ switch(codigo) {
 		 				 
 }
 
+function guardarAeronave(){
+	var aeronave ={};
+
+	aeronave['image'] = document.getElementById('image').value;
+	aeronave['since'] = document.getElementById('since').value;
+	aeronave['title'] = document.getElementById('title').value;
+	aeronave['category'] = document.getElementById('category').value;
+	aeronave['description'] = document.getElementById('description').value;
+
+	if(aeronave['image']== undefined || aeronave['since'] == undefined ||
+	aeronave['title'] == undefined || aeronave['category'] == undefined || aeronave['description']==undefined){
+		alert('Debe ingresar todos los campos');
+	}else{
+		fetch("http://localhost:3000/aeronaves",{
+			method: "POST",
+			body: JSON.stringify(aeronave),
+			headers: {
+				'Accept': 'application/json',
+				'Content-type': 'application/json; charset=UTF-8',
+			}
+		})
+		.then(response =>response.json())
+		.then(data=>addresult=data);
+	}
+}
+
 
   function codigoCat(catstr) {
 	var code="null";
