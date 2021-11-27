@@ -47,11 +47,32 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" value="Actualizar" id="enviar" >
+                        <input type="button" value="Actualizar" id="enviar" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="index.html"><input type="button" value="Regresar" /></a>
                     </td>
                 </tr>
             </table>  
         </form>
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            let data = parseQuery(location.search);
+
+            console.log(location.search);
+
+            if(data.id!==undefined){
+                obtenerAeronave(data.id);
+                document
+                    .getElementById('enviar')
+                    .addEventListener('click', function(){
+                        actualizarAeronave(data.id);
+                    });
+            }
+        });
+    </script>
 </body>
 </html>

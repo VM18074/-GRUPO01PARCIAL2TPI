@@ -103,7 +103,14 @@ function guardarAeronave(){
 		titles[nfila].innerHTML=aeronaves[nfila].title;
 		descriptions[nfila].innerHTML=aeronaves[nfila].description;
 		categories[nfila].innerHTML=aeronaves[nfila].category;
-		eliminar[nfila].innerHTML="<button  onclick=\"borrarAeronave("+aeronaves[nfila].id+");\" style=\"color:black;cursor:pointer;\">Eliminar</button>";
+		eliminar[nfila].innerHTML = `
+			<button  onclick="borrarAeronave('${aeronaves[nfila].id}');" style="color:black;cursor:pointer;">Eliminar</button>
+			<button type="button" style="margin-top: 16px;">
+				<a href="update.html?id=${aeronaves[nfila].id}">
+					Actualizar
+				</a>
+			</button>
+		`;
 		catcode=codigoCat(aeronaves[nfila].category);
 		tr=categories[nfila].parentElement;
 		tr.setAttribute("class",catcode);
@@ -129,7 +136,7 @@ if(a[p_key] < b[p_key]) return -1;
 return 0;
    });
 }
-function actualizarAeronave(){
+function actualizarAeronave(id){
 	var aeronave ={};
 
 	aeronave['image'] = document.getElementById('image').value;
@@ -142,7 +149,7 @@ function actualizarAeronave(){
 	aeronave['title'] == undefined || aeronave['category'] == undefined || aeronave['description']==undefined){
 		alert('Debe ingresar todos los campos');
 	}else{
-		fetch("http://localhost:3000/aeronaves",{
+		fetch("http://localhost:3000/aeronaves/"+id,{
 			method: "PUT",
 			body: JSON.stringify(aeronave),
 			headers: {
@@ -151,6 +158,40 @@ function actualizarAeronave(){
 			}
 		})
 		.then(response =>response.json())
-		.then(data=>addresult=data);
+		.then(data => {
+			alert('Datos actualizados');
+		});
+	}
+}
+
+function parseQuery(queryString) {
+	var query = {};
+	var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+	for (var i = 0; i < pairs.length; i++) {
+			var pair = pairs[i].split('=');
+			query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+	}
+	return query;
+}
+
+function obtenerAeronave(id){
+	if(id==undefined){
+		alert('Debe ingresar un id');
+	}else{
+		fetch("http://localhost:3000/aeronaves/"+id,{
+			method: "GET",
+			headers: {
+				'Accept': 'application/json',
+				'Content-type': 'application/json; charset=UTF-8',
+			}
+		})
+		.then(response =>response.json())
+		.then(data=> {
+			document.getElementById('title').value = data.title;
+			document.getElementById('since').value = data.since;
+			document.getElementById('description').value = data.description;
+			document.getElementById('image').value = data.image;
+			document.getElementById('category').value = data.category;
+		});
 	}
 }

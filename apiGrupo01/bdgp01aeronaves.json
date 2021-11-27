@@ -41,12 +41,12 @@
       "description": "Avión comercial de reacción, bimotor y de fuselaje ancho, desarrollado por Airbus, un consorcio de compañías aeroespaciales europeas actualmente propiedad de la corporación europea Airbus Group."
     },
     {
-      "id": 6,
       "image": "https://cdni.rt.com/actualidad/public_images/2015.07/original/55aba981c461887a038b4582.jpg",
-      "since": "1978",
+      "since": "1979",
       "title": "F/A-18 Hornet",
       "category": "militar",
-      "description": "Su radio de combate alcanza más de 900 kilómetros mientras que su velocidad es mayor a Mach 1.7."
+      "description": "Su radio de combate alcanza más de 900 kilómetros mientras que su velocidad es mayor a Mach 1.7.",
+      "id": 6
     },
     {
       "id": 7,
