@@ -9,6 +9,8 @@ var fila="<tr><td class='id'></td><td class='foto'></td><td class='since'></td><
 				aeronaves.forEach(
 				function(aeronave){
 					aeronave.since=parseInt(aeronave.since)
+
+					
 				});
 				listarAeronaves(data)})
 			.catch(error => {
@@ -54,7 +56,12 @@ function guardarAeronave(){
 			}
 		})
 		.then(response =>response.json())
-		.then(data=>addresult=data);
+		.then(data=> {
+			addresult=data
+			window.location.href='index.html'
+			alert('Datos Guardados');
+		});
+		
 	}
 }
 
@@ -159,6 +166,7 @@ function actualizarAeronave(id){
 		})
 		.then(response =>response.json())
 		.then(data => {
+			window.location.href='index.html'
 			alert('Datos actualizados');
 		});
 	}
